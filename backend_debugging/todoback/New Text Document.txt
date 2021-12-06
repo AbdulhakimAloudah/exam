@@ -1,0 +1,42 @@
+-Cannot find module '../db'
+    require("../db");
+    to require("./db");
+
+-Cannot find module 'mongoose'
+     npm i mongoose
+
+-  'MODULE_NOT_FOUND',
+  requireStack: ['C:\\Users\\user\\Desktop\\backend_debugging\\todoback\\routers\\controllers\\todos.js',
+     const mongoose = require("mongose");
+     const mongoose = require("mongoose");
+
+- updateTodo
+    module.export = {   updateTodo,};
+
+- TypeError: mongoose.module is not a function
+    at Object.<anonymous> (C:\Users\user\Desktop\backend_debugging\todoback\db\models\todo.js:11:27)
+          module.exports = todoModel;
+          const todoModel = mongoose.module("Todo", todoSchema);
+    to - module.exports = mongoose.model("Todo", todoSchema);
+
+-  morgan is not defined
+    const morgan = require("morgan");
+
+
+- const todoRouter = express.Router();
+
+
+-Route.get() requires a callback function but got a [object Undefined]
+         modul.export = {};
+         module.exports = {}
+
+
+- Error: listen EACCES: permission denied 4000;
+          DB=mongodb+srv://7aloudah:Hakoom1988@cluster0.b65qf.mongodb.net/social?retryWrites=true&w=majority
+          SALT=10
+          SECRETKEY=Hakoom1988
+
+- Cannot read properties of undefined (reading 'todo')
+          const createTodo = (req, res) => {
+                 const {todo} = req.body;
+
